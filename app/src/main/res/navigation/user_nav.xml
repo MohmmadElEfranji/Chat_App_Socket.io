@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/containerFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.appsocket.ui.fragment.chatprivate.ChatPrivateFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/onLineUserFragment"
+        android:name="com.example.appsocket.ui.fragment.home.OnLineUserFragment"
+        android:label="fragment_on_line_user"
+        tools:layout="@layout/fragment_on_line_user" />
+
+    <fragment
+        android:id="@+id/groupListFragment"
+        android:name="com.example.appsocket.ui.fragment.home.GroupListFragment"
+        android:label="fragment_group_list"
+        tools:layout="@layout/fragment_group_list" />
+
+    <fragment
+        android:id="@+id/chatGroupFragment"
+        android:name="com.example.appsocket.ui.fragment.chatgroup.ChatGroupFragment"
+        android:label="fragment_chat_group"
+        tools:layout="@layout/fragment_chat_group" >
+        <action
+            android:id="@+id/action_chatGroupFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/containerFragment"
+        android:name="com.example.appsocket.ui.fragment.main.ContainerFragment"
+        android:label="ContainerFragment" >
+        <action
+            android:id="@+id/action_containerFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_chatGroupFragment"
+            app:destination="@id/chatGroupFragment" />
+    </fragment>
+</navigation>

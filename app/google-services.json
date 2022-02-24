@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "450385615476",
+    "project_id": "chatsocket-9e065",
+    "storage_bucket": "chatsocket-9e065.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450385615476:android:6c126c5249523a6d98cf21",
+        "android_client_info": {
+          "package_name": "com.example.appsocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450385615476-gkqseejhuk713gunh879hp209bh5f6sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA54XT2YfL-dg4OaIosAMHXlHg9URAP1S4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450385615476-gkqseejhuk713gunh879hp209bh5f6sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

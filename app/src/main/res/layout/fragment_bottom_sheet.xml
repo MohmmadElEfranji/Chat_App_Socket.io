@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragment.dialog.BottomSheetFragment">
+
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/medium"
+        android:text="Select Users"
+        android:textColor="#297A22"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_DataUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@id/l"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select"
+        tools:listitem="@layout/online_user_rv" />
+
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_DataUser">
+
+        <EditText
+            android:id="@+id/txtNameGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ed_shape2"
+            android:ems="10"
+            android:hint="Group Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            tools:layout_editor_absoluteX="202dp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_create_group"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_shape"
+            android:text="Create group"
+            android:textColor="@color/white">
+
+        </android.widget.Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
